@@ -38,3 +38,5 @@ dependencies {
     compile 'io.reactivex:rxjava:1.2.3'
 
 }
+
+//apply from: './../bintray.gradle'
