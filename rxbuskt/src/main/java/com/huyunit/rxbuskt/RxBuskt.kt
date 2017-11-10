@@ -31,7 +31,7 @@ object RxBuskt {
     /**
      * Sends an event to Bus. Can be called from any thread
      */
-    fun send(event: Any) {
+    fun post(event: Any) {
         bus.onNext(event)
     }
 

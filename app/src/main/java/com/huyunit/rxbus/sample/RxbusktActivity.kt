@@ -30,13 +30,13 @@ class RxbusktActivity: AppCompatActivity() {
     private fun setClickListeners() {
         //produce example events on click
         buttonTextEvent.setOnClickListener {
-            RxBuskt.send(Event.Text("Single Text method."))
+            RxBuskt.post(Event.Text("Single Text method."))
         }
 
         var counter = 0
         buttonCounterEvent.setOnClickListener {
             counter++
-            RxBuskt.send(Event.Counter(count = counter))
+            RxBuskt.post(Event.Counter(count = counter))
         }
     }
 
